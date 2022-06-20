@@ -4,6 +4,7 @@ import ProductCard from '../productCard/ProductCard';
 function Shop() {
   return (
     <div>
+      {console.log('shop rendered...')}
       <ProductCard />
     </div>
   );

@@ -4,6 +4,7 @@ import CartItem from '../cartItem/CartItem';
 function Cart() {
   return (
     <div>
+      {console.log('cart rendered...')}
       <h2>Shopping Cart</h2>
       <div>
         <CartItem />
