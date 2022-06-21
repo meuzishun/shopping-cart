@@ -142,7 +142,8 @@ function App() {
     if (index === -1) {
       addItemToCart(item);
     } else {
-      const newQuantity = item.quantity + 1;
+      console.log(item);
+      const newQuantity = cartItems[index].quantity + 1;
       editItemQuantity(item, newQuantity);
     }
   };
