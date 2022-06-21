@@ -107,6 +107,7 @@ const products = [
 
 function App() {
   const [cartItems, setCartItems] = useState([]);
+  const [showCart, setShowCart] = useState(false);
 
   const getCartItemIndex = (item) => {
     return cartItems.findIndex((product) => product.id === item.id);
@@ -162,16 +163,25 @@ function App() {
     return cartItems.reduce((prev, curr) => prev + curr.quantity, 0);
   };
 
+  const toggleCartView = () => {
+    setShowCart(!showCart);
+  };
+
   return (
     <div className={styles.container}>
       <BrowserRouter>
-        <Header itemCount={getTotalItemCount()} />
-        <Cart
-          cartItems={cartItems}
-          editItemQuantity={editItemQuantity}
-          totalPrice={getTotalPrice()}
-          checkout={handleCartCheckout}
+        <Header
+          itemCount={getTotalItemCount()}
+          toggleCartView={toggleCartView}
         />
+        {showCart ? (
+          <Cart
+            cartItems={cartItems}
+            editItemQuantity={editItemQuantity}
+            totalPrice={getTotalPrice()}
+            checkout={handleCartCheckout}
+          />
+        ) : null}
         <Routes>
           <Route path='/' element={<Home />} />
           <Route

@@ -5,6 +5,10 @@
   position: relative;
 }
 
+.hidden {
+  display: none;
+}
+
 .container > * {
   border: 1px dashed grey;
 }
