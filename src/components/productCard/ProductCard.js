@@ -1,12 +1,21 @@
 import React from 'react';
 
 function ProductCard(props) {
+  const { product, addProductClick } = props;
+  const { name, description, price } = product;
+
   return (
     <div>
-      <p>{props.product.name}</p>
-      <p>{props.product.description}</p>
-      <p>{props.product.price}</p>
-      <button>Add to cart</button>
+      <p>{name}</p>
+      <p>{description}</p>
+      <p>{price}</p>
+      <button
+        onClick={() => {
+          addProductClick(product);
+        }}
+      >
+        Add to cart
+      </button>
     </div>
   );
 }

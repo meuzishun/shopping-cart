@@ -1,7 +1,12 @@
 import React from 'react';
 
 function Footer() {
-  return <div>{console.log('footer rendered...')}Footer</div>;
+  return (
+    <div>
+      Footer
+      {console.log('Footer has rendered...')}
+    </div>
+  );
 }
 
 export default Footer;

@@ -1,13 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function Nav() {
+function Nav(props) {
+  const { itemCount } = props;
+
   return (
     <nav>
-      <Link to='/'>Home</Link>
-      <Link to='shop'>Shop</Link>
-      <Link to='contact'>Contact</Link>
-      <button>Cart</button>
+      <Link to='/'>home</Link>
+      <Link to='shop'>shop</Link>
+      <Link to='contact'>contact</Link>
+      <button>cart ({itemCount})</button>
     </nav>
   );
 }

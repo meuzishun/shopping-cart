@@ -1,7 +1,12 @@
 import React from 'react';
 
 function Home() {
-  return <div>{console.log('home rendered...')}Home</div>;
+  return (
+    <div>
+      Home
+      {console.log('Home has rendered...')}
+    </div>
+  );
 }
 
 export default Home;
