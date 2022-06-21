@@ -8,7 +8,7 @@ import Home from './components/home/Home.js';
 import Shop from './components/shop/Shop.js';
 import Contact from './components/contact/Contact.js';
 import Footer from './components/footer/Footer.js';
-import './App.css';
+import styles from './App.module.css';
 
 //* Something strange is happening with uniqid() and setCartItems... the products need to be declared outside of the App.
 //TODO - try putting the products in a separate json file and see if fetch can be used to emulate querying a server.
@@ -27,6 +27,42 @@ const products = [
   },
   {
     name: 'item 3',
+    description: 'it sucks',
+    price: 7.89,
+    id: uniqid(),
+  },
+  {
+    name: 'item 4',
+    description: 'it is cool',
+    price: 1.23,
+    id: uniqid(),
+  },
+  {
+    name: 'item 5',
+    description: 'it is also cool',
+    price: 4.56,
+    id: uniqid(),
+  },
+  {
+    name: 'item 6',
+    description: 'it sucks',
+    price: 7.89,
+    id: uniqid(),
+  },
+  {
+    name: 'item 7',
+    description: 'it is cool',
+    price: 1.23,
+    id: uniqid(),
+  },
+  {
+    name: 'item 8',
+    description: 'it is also cool',
+    price: 4.56,
+    id: uniqid(),
+  },
+  {
+    name: 'item 9',
     description: 'it sucks',
     price: 7.89,
     id: uniqid(),
@@ -78,7 +114,6 @@ function App() {
     setCartItems([]);
   };
 
-  //TODO - create total cost state
   const getTotalPrice = () => {
     return cartItems.reduce(
       (prev, curr) =>
@@ -92,7 +127,7 @@ function App() {
   };
 
   return (
-    <div>
+    <div className={styles.container}>
       <BrowserRouter>
         <Header itemCount={getTotalItemCount()} />
         <Cart
