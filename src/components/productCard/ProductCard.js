@@ -4,18 +4,16 @@ function ProductCard(props) {
   const { product, addProductClick } = props;
   const { name, description, price } = product;
 
+  const handleAddProductClick = () => {
+    addProductClick(product);
+  };
+
   return (
     <div>
       <p>{name}</p>
       <p>{description}</p>
       <p>${price}</p>
-      <button
-        onClick={() => {
-          addProductClick(product);
-        }}
-      >
-        Add to cart
-      </button>
+      <button onClick={handleAddProductClick}>Add to cart</button>
     </div>
   );
 }
