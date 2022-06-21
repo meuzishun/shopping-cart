@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './ProductCard.module.css';
 
 function ProductCard(props) {
   const { product, addProductClick } = props;
@@ -9,11 +10,13 @@ function ProductCard(props) {
   };
 
   return (
-    <div>
-      <p>{name}</p>
-      <p>{description}</p>
-      <p>${price}</p>
-      <button onClick={handleAddProductClick}>Add to cart</button>
+    <div className={styles.card}>
+      <h3 className={styles.title}>{name}</h3>
+      <p className={styles.description}>{description}</p>
+      <p className={styles.price}>${price}</p>
+      <button className={styles.addBtn} onClick={handleAddProductClick}>
+        Add to cart
+      </button>
     </div>
   );
 }
