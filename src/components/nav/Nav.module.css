@@ -1,20 +1,20 @@
-nav {
+.nav {
   display: flex;
   align-items: center;
   gap: 3rem;
   text-transform: capitalize;
 }
 
-nav > a {
+.nav > a {
   color: black;
   text-decoration: none;
   font-size: 1.5rem;
 }
 
-nav > a:hover {
+.nav > a:hover {
   text-decoration: underline;
 }
 
-nav > button {
+.nav > button {
   padding: 0.5rem 1rem;
 }
