@@ -8,7 +8,7 @@ function ProductCard(props) {
     <div>
       <p>{name}</p>
       <p>{description}</p>
-      <p>{price}</p>
+      <p>${price}</p>
       <button
         onClick={() => {
           addProductClick(product);

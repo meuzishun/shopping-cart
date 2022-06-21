@@ -67,6 +67,42 @@ const products = [
     price: 7.89,
     id: uniqid(),
   },
+  {
+    name: 'item 10',
+    description: 'it is cool',
+    price: 1.23,
+    id: uniqid(),
+  },
+  {
+    name: 'item 11',
+    description: 'it is also cool',
+    price: 4.56,
+    id: uniqid(),
+  },
+  {
+    name: 'item 12',
+    description: 'it sucks',
+    price: 7.89,
+    id: uniqid(),
+  },
+  {
+    name: 'item 13',
+    description: 'it is cool',
+    price: 1.23,
+    id: uniqid(),
+  },
+  {
+    name: 'item 14',
+    description: 'it is also cool',
+    price: 4.56,
+    id: uniqid(),
+  },
+  {
+    name: 'item 15',
+    description: 'it sucks',
+    price: 7.89,
+    id: uniqid(),
+  },
 ];
 
 function App() {
