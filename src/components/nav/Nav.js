@@ -6,7 +6,7 @@ function Nav(props) {
   const { itemCount } = props;
 
   return (
-    <nav>
+    <nav className={styles.nav}>
       <Link to='/'>home</Link>
       <Link to='shop'>shop</Link>
       <Link to='contact'>contact</Link>
