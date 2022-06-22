@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './QuantityWidget.module.css';
 
 function QuantityWidget(props) {
   const { item, editItemQuantity } = props;
@@ -9,10 +10,14 @@ function QuantityWidget(props) {
   };
 
   return (
-    <div>
-      <button onClick={handleChange}>-</button>
-      <p>{item.quantity}</p>
-      <button onClick={handleChange}>+</button>
+    <div className={styles.widget}>
+      <button className={styles.widgetBtn} onClick={handleChange}>
+        -
+      </button>
+      <p className={styles.itemCount}>{item.quantity}</p>
+      <button className={styles.widgetBtn} onClick={handleChange}>
+        +
+      </button>
     </div>
   );
 }

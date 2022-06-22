@@ -1,0 +1,18 @@
+.widget {
+  display: flex;
+  align-items: center;
+}
+
+.widget > * {
+  font-size: 1.25rem;
+}
+
+.itemCount {
+  width: 2rem;
+  text-align: center;
+}
+
+.widgetBtn {
+  width: 1.75rem;
+  border: none;
+}

@@ -8,9 +8,3 @@
 .hidden {
   display: none;
 }
-
-.container > * {
-  border: 1px dashed grey;
-}
-
-/*TODO - pick up with positioning the main components... main content should take up at least the leftover from header and footer.*/

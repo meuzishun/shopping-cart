@@ -1,8 +1,9 @@
 .cart {
+  border-radius: 0.5rem;
   z-index: 1;
   position: fixed;
   right: 0;
-  top: 200px;
+  top: 100px;
   width: 20rem;
   padding: 2rem;
   display: flex;
@@ -10,6 +11,7 @@
   align-items: center;
   gap: 2rem;
   background-color: #fff;
+  box-shadow: 1rem 1rem 5rem rgba(0, 0, 0, 0.169);
 }
 
 h2,
@@ -26,4 +28,13 @@ h2 {
   max-height: 300px;
   overflow-y: scroll;
   align-self: stretch;
+}
+
+.cart > button {
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  background-color: rgb(0, 201, 0);
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
 }
