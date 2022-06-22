@@ -3,7 +3,7 @@ import React from 'react';
 function Footer() {
   return (
     <div>
-      Footer
+      <p>Copyright &copy; meuzishun 2022</p>
       {console.log('Footer has rendered...')}
     </div>
   );
