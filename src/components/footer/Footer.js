@@ -1,11 +1,12 @@
 import React from 'react';
+import styles from './Footer.module.css';
 
 function Footer() {
   return (
-    <div>
+    <footer>
       <p>Copyright &copy; meuzishun 2022</p>
       {console.log('Footer has rendered...')}
-    </div>
+    </footer>
   );
 }
 
