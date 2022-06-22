@@ -1,8 +1,15 @@
 .cart {
+  z-index: 1;
   position: fixed;
   right: 0;
-  top: 300px;
-  padding: 10px;
+  top: 200px;
+  width: 20rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  background-color: #fff;
 }
 
 h2,
@@ -11,7 +18,12 @@ button {
   text-transform: capitalize;
 }
 
+h2 {
+  font-size: 1.5rem;
+}
+
 .items {
   max-height: 300px;
   overflow-y: scroll;
+  align-self: stretch;
 }
