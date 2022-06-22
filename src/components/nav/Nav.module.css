@@ -6,16 +6,23 @@
 }
 
 .nav > a {
-  color: black;
+  color: #fff;
   text-decoration: none;
   font-size: 1.5rem;
+  transition: all 250ms ease-in-out;
+  border-bottom: 2px solid rgba(255, 255, 255, 0);
 }
 
 .nav > a:hover {
-  text-decoration: underline;
+  border-bottom: 2px solid #ddd;
+  color: #ddd;
 }
 
 .nav > button {
   padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
   text-transform: capitalize;
+  background-color: rgb(23, 99, 7);
+  color: #fff;
 }
