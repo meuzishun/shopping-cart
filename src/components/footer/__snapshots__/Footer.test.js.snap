@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer component renders 1`] = `
+<DocumentFragment>
+  <footer>
+    <p>
+      Copyright © meuzishun 2022
+    </p>
+  </footer>
+</DocumentFragment>
+`;
