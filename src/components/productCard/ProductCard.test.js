@@ -6,13 +6,13 @@ import ProductCard from './ProductCard';
 describe('ProductCard component', () => {
   afterEach(cleanup);
 
-  it('contains an heading with the proper text', () => {
-    const testProduct = {
-      name: 'test',
-      description: 'testing',
-      price: 1.23,
-    };
+  const testProduct = {
+    name: 'test',
+    description: 'testing',
+    price: 1.23,
+  };
 
+  it('contains an heading with the proper text', () => {
     render(<ProductCard product={testProduct} addProductClick={jest.fn()} />);
 
     expect(screen.getByRole('heading')).toHaveTextContent('test');
