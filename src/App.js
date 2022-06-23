@@ -169,7 +169,7 @@ function App() {
   };
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container} data-testid='app'>
       <BrowserRouter>
         <Header
           itemCount={getTotalItemCount()}
@@ -198,7 +198,7 @@ function App() {
         </Routes>
         <Footer />
       </BrowserRouter>
-      {console.log('App has rendered...')}
+      {/* {console.log('App has rendered...')} */}
     </div>
   );
 }

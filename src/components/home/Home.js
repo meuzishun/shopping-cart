@@ -4,7 +4,7 @@ function Home() {
   return (
     <div>
       Home
-      {console.log('Home has rendered...')}
+      {/* {console.log('Home has rendered...')} */}
     </div>
   );
 }

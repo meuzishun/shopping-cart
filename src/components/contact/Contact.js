@@ -4,7 +4,7 @@ function Contact() {
   return (
     <div>
       Contact
-      {console.log('Contact has rendered...')}
+      {/* {console.log('Contact has rendered...')} */}
     </div>
   );
 }

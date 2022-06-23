@@ -5,7 +5,7 @@ function Footer() {
   return (
     <footer>
       <p>Copyright &copy; meuzishun 2022</p>
-      {console.log('Footer has rendered...')}
+      {/* {console.log('Footer has rendered...')} */}
     </footer>
   );
 }

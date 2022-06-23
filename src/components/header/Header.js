@@ -8,7 +8,7 @@ function Header(props) {
     <div className={styles.header}>
       <h1>logo</h1>
       <Nav itemCount={itemCount} toggleCartView={toggleCartView} />
-      {console.log('Header has rendered...')}
+      {/* {console.log('Header has rendered...')} */}
     </div>
   );
 }

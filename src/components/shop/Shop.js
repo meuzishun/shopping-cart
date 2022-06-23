@@ -14,7 +14,7 @@ function Shop(props) {
           addProductClick={addProductClick}
         />
       ))}
-      {console.log('Shop has rendered...')}
+      {/* {console.log('Shop has rendered...')} */}
     </div>
   );
 }
