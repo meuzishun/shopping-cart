@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App component renders 1`] = `
+<DocumentFragment>
+  <div
+    class="container"
+  >
+    <div
+      class="header"
+    >
+      <h1>
+        logo
+      </h1>
+      <nav
+        class="nav"
+      >
+        <a
+          href="/"
+        >
+          home
+        </a>
+        <a
+          href="/shop"
+        >
+          shop
+        </a>
+        <a
+          href="/contact"
+        >
+          contact
+        </a>
+        <button>
+          cart (0)
+        </button>
+      </nav>
+    </div>
+    <div>
+      Home
+    </div>
+    <footer>
+      <p>
+        Copyright © meuzishun 2022
+      </p>
+    </footer>
+  </div>
+</DocumentFragment>
+`;
