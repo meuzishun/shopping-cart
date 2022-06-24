@@ -12,8 +12,12 @@ function ProductCard(props) {
   return (
     <div className={styles.card}>
       <h3 className={styles.title}>{name}</h3>
-      <p className={styles.description}>{description}</p>
-      <p className={styles.price}>${price}</p>
+      <p className={styles.description} data-testid='productDescription'>
+        {description}
+      </p>
+      <p className={styles.price} data-testid='productPrice'>
+        ${price}
+      </p>
       <button className={styles.addBtn} onClick={handleAddProductClick}>
         Add to cart
       </button>
