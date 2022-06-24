@@ -1,6 +1,5 @@
 import React from 'react';
 import { useState } from 'react';
-import uniqid from 'uniqid';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/header/Header';
 import Cart from './components/cart/Cart';
@@ -9,101 +8,10 @@ import Shop from './components/shop/Shop.js';
 import Contact from './components/contact/Contact.js';
 import Footer from './components/footer/Footer.js';
 import styles from './App.module.css';
+import { products } from './products';
 
 //* Something strange is happening with uniqid() and setCartItems... the products need to be declared outside of the App.
 //TODO - try putting the products in a separate json file and see if fetch can be used to emulate querying a server.
-const products = [
-  {
-    name: 'item 1',
-    description: 'it is cool',
-    price: 1.23,
-    id: uniqid(),
-  },
-  {
-    name: 'item 2',
-    description: 'it is also cool',
-    price: 4.56,
-    id: uniqid(),
-  },
-  {
-    name: 'item 3',
-    description: 'it sucks',
-    price: 7.89,
-    id: uniqid(),
-  },
-  {
-    name: 'item 4',
-    description: 'it is cool',
-    price: 1.23,
-    id: uniqid(),
-  },
-  {
-    name: 'item 5',
-    description: 'it is also cool',
-    price: 4.56,
-    id: uniqid(),
-  },
-  {
-    name: 'item 6',
-    description: 'it sucks',
-    price: 7.89,
-    id: uniqid(),
-  },
-  {
-    name: 'item 7',
-    description: 'it is cool',
-    price: 1.23,
-    id: uniqid(),
-  },
-  {
-    name: 'item 8',
-    description: 'it is also cool',
-    price: 4.56,
-    id: uniqid(),
-  },
-  {
-    name: 'item 9',
-    description: 'it sucks',
-    price: 7.89,
-    id: uniqid(),
-  },
-  {
-    name: 'item 10',
-    description: 'it is cool',
-    price: 1.23,
-    id: uniqid(),
-  },
-  {
-    name: 'item 11',
-    description: 'it is also cool',
-    price: 4.56,
-    id: uniqid(),
-  },
-  {
-    name: 'item 12',
-    description: 'it sucks',
-    price: 7.89,
-    id: uniqid(),
-  },
-  {
-    name: 'item 13',
-    description: 'it is cool',
-    price: 1.23,
-    id: uniqid(),
-  },
-  {
-    name: 'item 14',
-    description: 'it is also cool',
-    price: 4.56,
-    id: uniqid(),
-  },
-  {
-    name: 'item 15',
-    description: 'it sucks',
-    price: 7.89,
-    id: uniqid(),
-  },
-];
 
 function App() {
   const [cartItems, setCartItems] = useState([]);
