@@ -1,5 +1,4 @@
-import React from 'react';
-import { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/header/Header';
 import Cart from './components/cart/Cart';
@@ -9,11 +8,20 @@ import Contact from './components/contact/Contact.js';
 import Footer from './components/footer/Footer.js';
 import styles from './App.module.css';
 import products from './products';
-console.log(JSON.parse(products));
 
 function App() {
+  const [storeProducts, setStoreProducts] = useState(null);
   const [cartItems, setCartItems] = useState([]);
   const [showCart, setShowCart] = useState(false);
+
+  const getProducts = async () => {
+    //! Ok, we can finally log the results here... but WTF?!
+    // const response = await fetch('./products.json');
+    // const products = await response.text();
+    // console.log(products);
+    // const products = await JSON.parse(json);
+    setStoreProducts(products);
+  };
 
   const getCartItemIndex = (item) => {
     return cartItems.findIndex((product) => product.id === item.id);
@@ -48,7 +56,6 @@ function App() {
     if (index === -1) {
       addItemToCart(item);
     } else {
-      console.log(item);
       const newQuantity = cartItems[index].quantity + 1;
       editItemQuantity(item, newQuantity);
     }
@@ -74,6 +81,10 @@ function App() {
     setShowCart(!showCart);
   };
 
+  useEffect(() => {
+    getProducts();
+  }, []);
+
   return (
     <div className={styles.container} data-testid='app'>
       <BrowserRouter>
@@ -95,7 +106,7 @@ function App() {
             path='/shop'
             element={
               <Shop
-                products={JSON.parse(products)}
+                products={storeProducts}
                 addProductClick={handleAddProductClick}
               />
             }

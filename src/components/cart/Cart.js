@@ -21,7 +21,7 @@ function Cart(props) {
       </div>
       <p>total price: ${totalPrice}</p>
       <button onClick={checkout}>checkout</button>
-      {console.log('Cart has rendered...')}
+      {/* {console.log('Cart has rendered...')} */}
     </div>
   );
 }

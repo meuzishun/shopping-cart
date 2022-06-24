@@ -93,4 +93,4 @@ const products = [
   },
 ];
 
-export default JSON.stringify(products);
+export default products;

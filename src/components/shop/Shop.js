@@ -7,13 +7,15 @@ function Shop(props) {
 
   return (
     <div className={styles.shop}>
-      {products.map((product) => (
-        <ProductCard
-          product={product}
-          key={product.id}
-          addProductClick={addProductClick}
-        />
-      ))}
+      {products
+        ? products.map((product) => (
+            <ProductCard
+              product={product}
+              key={product.id}
+              addProductClick={addProductClick}
+            />
+          ))
+        : null}
       {/* {console.log('Shop has rendered...')} */}
     </div>
   );
