@@ -10,9 +10,6 @@ import Footer from './components/footer/Footer.js';
 import styles from './App.module.css';
 import { products } from './products';
 
-//* Something strange is happening with uniqid() and setCartItems... the products need to be declared outside of the App.
-//TODO - try putting the products in a separate json file and see if fetch can be used to emulate querying a server.
-
 function App() {
   const [cartItems, setCartItems] = useState([]);
   const [showCart, setShowCart] = useState(false);
