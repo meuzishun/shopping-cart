@@ -8,7 +8,8 @@ import Shop from './components/shop/Shop.js';
 import Contact from './components/contact/Contact.js';
 import Footer from './components/footer/Footer.js';
 import styles from './App.module.css';
-import { products } from './products';
+import products from './products';
+console.log(JSON.parse(products));
 
 function App() {
   const [cartItems, setCartItems] = useState([]);
@@ -94,7 +95,7 @@ function App() {
             path='/shop'
             element={
               <Shop
-                products={products}
+                products={JSON.parse(products)}
                 addProductClick={handleAddProductClick}
               />
             }

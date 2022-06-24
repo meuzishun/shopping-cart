@@ -1,6 +1,6 @@
 import uniqid from 'uniqid';
 
-export const products = [
+const products = [
   {
     name: 'item 1',
     description: 'it is cool',
@@ -92,3 +92,5 @@ export const products = [
     id: uniqid(),
   },
 ];
+
+export default JSON.stringify(products);
