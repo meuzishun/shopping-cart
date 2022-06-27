@@ -3,7 +3,6 @@ import { render, screen, cleanup, getByRole } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import userEvent from '@testing-library/user-event';
 import CartItem from './CartItem';
-import QuantityWidget from '../QuantityWidget/QuantityWidget';
 
 describe('ProductCard component', () => {
   afterEach(cleanup);
