@@ -6,7 +6,7 @@ function Shop(props) {
   const { products, addProductClick } = props;
 
   return (
-    <div className={styles.shop}>
+    <div className={styles.shop} data-testid='shop'>
       {products
         ? products.map((product) => (
             <ProductCard
