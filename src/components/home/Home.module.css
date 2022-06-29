@@ -1,0 +1,39 @@
+.container {
+  background-image: url('../../images/sound_waves.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.home_heading {
+  color: #fff;
+  font-size: 5rem;
+}
+
+.home_description {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.home_shop_btn {
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.home_shop_btn > a {
+  text-decoration: none;
+  font-size: 3rem;
+  color: #fff;
+}
+
+.home_shop_btn:hover {
+  background-color: #1b638c8c;
+}
