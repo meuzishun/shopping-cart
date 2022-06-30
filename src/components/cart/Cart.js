@@ -1,4 +1,5 @@
 import React from 'react';
+import { formatPriceText } from '../../utilities/formatPriceText';
 import CartItem from '../cartItem/CartItem';
 import styles from './Cart.module.css';
 
@@ -19,7 +20,7 @@ function Cart(props) {
           />
         ))}
       </div>
-      <p>total price: ${totalPrice}</p>
+      <p>total price: {formatPriceText(totalPrice)}</p>
       <button onClick={checkout}>checkout</button>
       {/* {console.log('Cart has rendered...')} */}
     </div>

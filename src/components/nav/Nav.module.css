@@ -13,8 +13,9 @@
   border-bottom: 2px solid rgba(255, 255, 255, 0);
 }
 
-.nav > a:hover {
-  border-bottom: 2px solid #ddd;
+.nav > a:hover,
+.nav > a:active {
+  border-bottom: 2px solid #60c2eb;
   color: #ddd;
 }
 
@@ -23,6 +24,6 @@
   border: none;
   border-radius: 0.5rem;
   text-transform: capitalize;
-  background-color: rgb(23, 99, 7);
-  color: #fff;
+  background-color: #60c2eb;
+  color: #111;
 }

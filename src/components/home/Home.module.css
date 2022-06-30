@@ -1,5 +1,6 @@
 .container {
   background-image: url('../../images/sound_waves.jpg');
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -35,5 +36,5 @@
 }
 
 .home_shop_btn:hover {
-  background-color: #1b638c8c;
+  background-color: #1b638ca3;
 }

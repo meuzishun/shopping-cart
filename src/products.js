@@ -1,28 +1,36 @@
+import babyBottleMicrophone from './images/baby_bottle_microphone.jpg';
+import speaker from './images/e8_speaker.jpg';
+import ksmMicrophone from './images/KSM_microphone.avif';
+import soundcraftMixer from './images/soundcraft_mixer.jpg';
 import uniqid from 'uniqid';
 
 const products = [
   {
-    name: 'item 1',
-    description: 'it is cool',
-    price: 1.23,
+    name: 'Blue Microphones Baby Bottle SL Large-diaphragm Condenser Microphone',
+    imgUrl: babyBottleMicrophone,
+    description: 'cardioid condenser microphone',
+    price: 399.99,
     id: uniqid(),
   },
   {
-    name: 'item 2',
-    description: 'it is also cool',
-    price: 4.56,
+    name: 'PreSonus Eris E8 XT 8 inch Powered Studio Monitor',
+    imgUrl: speaker,
+    description: 'speaker',
+    price: 259.95,
     id: uniqid(),
   },
   {
-    name: 'item 3',
-    description: 'it sucks',
-    price: 7.89,
+    name: 'Shure KSM141 Small-diaphragm Condenser Microphone',
+    imgUrl: ksmMicrophone,
+    description: 'cardioid condenser microphone',
+    price: 899.0,
     id: uniqid(),
   },
   {
-    name: 'item 4',
-    description: 'it is cool',
-    price: 1.23,
+    name: 'Soundcraft Signature 12 MTK Mixer and Audio Interface with Effects',
+    imgUrl: soundcraftMixer,
+    description: 'mixer/interface',
+    price: 585.0,
     id: uniqid(),
   },
   {
