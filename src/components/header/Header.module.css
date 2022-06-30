@@ -10,7 +10,11 @@
 
 .header > h1 {
   padding: 0 3rem;
-  font-size: 3rem;
   text-transform: capitalize;
+}
+
+.header > h1 > a {
+  font-size: 3rem;
+  text-decoration: none;
   color: #eee;
 }
