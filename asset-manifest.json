@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/shopping-cart/static/css/main.b60b7098.css",
+    "main.js": "/shopping-cart/static/js/main.f657670a.js",
+    "static/media/sound_waves.jpg": "/shopping-cart/static/media/sound_waves.d99cb012670fc198e2b8.jpg",
+    "static/media/baby_bottle_microphone.jpg": "/shopping-cart/static/media/baby_bottle_microphone.cca2292e946c6245403d.jpg",
+    "static/media/KS88_angle_slug.jpg": "/shopping-cart/static/media/KS88_angle_slug.529e801155e6b729682b.jpg",
+    "static/media/XLM5-XLF5-1.jpeg": "/shopping-cart/static/media/XLM5-XLF5-1.9fb953e20f0e2ebae8e3.jpeg",
+    "static/media/soundcraft_mixer.jpg": "/shopping-cart/static/media/soundcraft_mixer.ad80b7b27c8ecbef3e7d.jpg",
+    "static/media/e8_speaker.jpg": "/shopping-cart/static/media/e8_speaker.a9a5b30ded540c414c4e.jpg",
+    "static/media/HD_600_ProductShot_03.webp": "/shopping-cart/static/media/HD_600_ProductShot_03.fcc845d15aa1e7c466ce.webp",
+    "static/media/KSM_microphone.avif": "/shopping-cart/static/media/KSM_microphone.594f80dae1af64c7b596.avif",
+    "static/media/compass-specs-desktop.jpg": "/shopping-cart/static/media/compass-specs-desktop.9ec20350888690ba6425.jpg",
+    "index.html": "/shopping-cart/index.html",
+    "main.b60b7098.css.map": "/shopping-cart/static/css/main.b60b7098.css.map",
+    "main.f657670a.js.map": "/shopping-cart/static/js/main.f657670a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b60b7098.css",
+    "static/js/main.f657670a.js"
+  ]
+}
