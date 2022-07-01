@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/shopping-cart/static/css/main.b60b7098.css",
-    "main.js": "/shopping-cart/static/js/main.f657670a.js",
+    "main.js": "/shopping-cart/static/js/main.815e7c19.js",
     "static/media/sound_waves.jpg": "/shopping-cart/static/media/sound_waves.d99cb012670fc198e2b8.jpg",
     "static/media/baby_bottle_microphone.jpg": "/shopping-cart/static/media/baby_bottle_microphone.cca2292e946c6245403d.jpg",
     "static/media/KS88_angle_slug.jpg": "/shopping-cart/static/media/KS88_angle_slug.529e801155e6b729682b.jpg",
@@ -13,10 +13,10 @@
     "static/media/compass-specs-desktop.jpg": "/shopping-cart/static/media/compass-specs-desktop.9ec20350888690ba6425.jpg",
     "index.html": "/shopping-cart/index.html",
     "main.b60b7098.css.map": "/shopping-cart/static/css/main.b60b7098.css.map",
-    "main.f657670a.js.map": "/shopping-cart/static/js/main.f657670a.js.map"
+    "main.815e7c19.js.map": "/shopping-cart/static/js/main.815e7c19.js.map"
   },
   "entrypoints": [
     "static/css/main.b60b7098.css",
-    "static/js/main.f657670a.js"
+    "static/js/main.815e7c19.js"
   ]
 }
