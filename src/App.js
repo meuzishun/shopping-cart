@@ -87,7 +87,7 @@ function App() {
 
   return (
     <div className={styles.container} data-testid='app'>
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Header
           itemCount={getTotalItemCount()}
           toggleCartView={toggleCartView}
