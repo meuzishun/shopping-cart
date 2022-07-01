@@ -10,7 +10,11 @@ function Nav(props) {
       <Link to='/'>home</Link>
       <Link to='shop'>shop</Link>
       <Link to='contact'>contact</Link>
-      <button onClick={toggleCartView}>cart ({itemCount})</button>
+      {/* <button onClick={toggleCartView}>cart ({itemCount})</button> */}
+      <button onClick={toggleCartView}>
+        <span className='iconify' data-id='cart' data-icon='mdi-cart'></span> (
+        {itemCount})
+      </button>
     </nav>
   );
 }

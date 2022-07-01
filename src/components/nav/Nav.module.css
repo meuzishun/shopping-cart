@@ -21,9 +21,21 @@
 
 .nav > button {
   padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: none;
   border-radius: 0.5rem;
   text-transform: capitalize;
-  background-color: #60c2eb;
-  color: #111;
+  background-color: rgba(255, 255, 255, 0);
+  color: #60c2eb;
+}
+
+.nav > button:hover {
+  box-shadow: none;
+}
+
+[data-id='cart'] {
+  font-size: 2rem;
+  color: #60c2eb;
 }
